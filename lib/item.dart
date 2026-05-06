@@ -1,6 +1,5 @@
-// Modelo de datos simple para almacenar la informacion
 class Item {
-  final int id;
+  final String id;
   final String name;
   final String description;
 
@@ -10,7 +9,7 @@ class Item {
     required this.description,
   });
 
-  // Convertir un objeto Item a un Map (para JSON)
+  // Convierte un objeto Item a un Map para enviarlo a Firestore
   Map<String, dynamic> toJson() {
     return {
       'id': id,
@@ -19,13 +18,12 @@ class Item {
     };
   }
 
-  // Crear un objeto Item desde un Map (desde JSON)
+  // Crea un objeto Item a partir de un Map proveniente de Firestore
   factory Item.fromJson(Map<String, dynamic> json) {
     return Item(
-      id: json['id'],
-      name: json['name'],
-      description: json['description'],
+      id: json['id'] as String? ?? '',
+      name: json['name'] as String? ?? 'Sin nombre',
+      description: json['description'] as String? ?? 'Sin descripción',
     );
   }
-
 }

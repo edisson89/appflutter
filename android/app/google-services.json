@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "115181759850",
+    "project_id": "network-x-6e067",
+    "storage_bucket": "network-x-6e067.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115181759850:android:f0347a55561e4a3d4a4913",
+        "android_client_info": {
+          "package_name": "com.example.network_x"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZjSLTuHAF5d-cY4cnveQNqIJFoj9O5m0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -17,7 +17,6 @@ void main() {
     // renderiza la app,
     await tester.pumpWidget(const MyApp());
 //verifica que el texto de la app exista
-    expect(find.text('Flutter Demo Home Page'), findsOneWidget);
-
+    expect(find.text('Network X - Items'), findsOneWidget);
   });
 }
